@@ -29,3 +29,6 @@ representation of an object. This representation can take various forms, dependi
 specific application, such as a point cloud or a 3D mesh. The discriminator network receives
 both real 3D models from a dataset and the generated ones from the generator. It analyzes
 the models and outputs a score indicating how likely it is that the model is real.
+
+![image](https://github.com/manasa-26/Text-to-image-and-3D-model-generation/assets/87278111/7dad2151-179a-4ea5-af46-fa558ce1c191)
+
