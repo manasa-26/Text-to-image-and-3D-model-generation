@@ -38,8 +38,7 @@ the models and outputs a score indicating how likely it is that the model is rea
 
 
 
-
-**  3D model generation of a cube**
+** 3D model generation of a cube**
 ![image](https://github.com/manasa-26/Text-to-image-and-3D-model-generation/assets/87278111/be2eee39-638a-4e78-8b02-33998c7bed4f)
 
 
