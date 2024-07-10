@@ -30,14 +30,16 @@ specific application, such as a point cloud or a 3D mesh. The discriminator netw
 both real 3D models from a dataset and the generated ones from the generator. It analyzes
 the models and outputs a score indicating how likely it is that the model is real.
 
-Text to image synthesiss for the the prompt given: Photo of an Astronaut riding a horse on mars
+**Text to image synthesiss for the the prompt given: Photo of an Astronaut riding a horse on mars**
 ![image](https://github.com/manasa-26/Text-to-image-and-3D-model-generation/assets/87278111/7dad2151-179a-4ea5-af46-fa558ce1c191)
 
-Text to image synthesiss for the the prompt given: bird on the tree
+**Text to image synthesiss for the the prompt given: bird on the tree**
 ![image](https://github.com/manasa-26/Text-to-image-and-3D-model-generation/assets/87278111/c7d57d25-cbb9-46f1-9cee-4ed974ba9cf8)
 
 
-3D model generation of a cube
+
+
+**  3D model generation of a cube**
 ![image](https://github.com/manasa-26/Text-to-image-and-3D-model-generation/assets/87278111/be2eee39-638a-4e78-8b02-33998c7bed4f)
 
 
