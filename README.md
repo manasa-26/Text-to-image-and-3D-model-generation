@@ -1,5 +1,6 @@
 # Text-to-image-and-3D-model-generation
-Text to image using stable diffusion and 3D Model using gans
+
+
 **• Text-to-Image with Standard Diffusion Models**
 The Standard Diffusion: Diffusion models work by cleverly reversing a process called
 "diffusion." Imagine taking a clear image and gradually adding noise until it becomes
