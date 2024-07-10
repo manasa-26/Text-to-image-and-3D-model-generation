@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #9A8C98;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #F2E9E4;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .project-title {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #615660;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            color: #615660;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 24px;
+        }
+        input[type="text"] {
+            width: calc(100% - 22px); /* Adjusting for the border width */
+            outline: none;
+            box-shadow: 0 0 0 3px #615660; 
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .btn-generate {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #9A8C98;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .btn-generate:hover {
+            background-color: #615660;
+        }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 30px 50px;
+            margin: 0 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #615660;
+            color: #9A8C98;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #F2E9E4;
+        }
+        .prompt-container {
+            margin-top: 20px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .prompt-container h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .prompt-container p {
+            text-align: center;
+            color: #615660;
+            font-style: italic;
+        }
+
+        .image-container {
+            margin-top: 20px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .image-container img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="back-button" onclick="goBack()">Back</button>
+
+<div class="container">
+    <div class="project-title">TEXT TO IMAGE SYNTHESIS</div>
+    
+    <div class="form-group">
+        <form id="prompt-form" action="/view_project" method="POST">
+            <label for="prompt">GIVE A PROMPT</label>
+            <input type="text" id="prompt" name="prompt" placeholder="Enter your prompt...">
+            <button type="submit" class="btn-generate">Generate Image</button>
+        </form>
+    </div>
+    
+    {% if prompt %}
+    <div id="prompt-container">
+        <h2>Prompt Entered:</h2>
+        <p>{{ prompt }}</p>
+    </div>
+    {% endif %}
+    
+    {% if image_url %}
+    <div id="image-container">
+        <h2>Generated Image</h2>
+        <img src="{{image_url }}" alt="Generated Image">
+    </div>
+    {% endif %}
+</div>
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+
+</body>
+</html>
+

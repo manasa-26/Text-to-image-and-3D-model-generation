@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #F2E9E4;
+        }
+        .buttons-container {
+            text-align: center;
+        }
+        button {
+            padding: 30px 50px;
+            margin: 0 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #9A8C98;
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #615660;
+        }
+        .back-button {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
+    </style>
+</head>
+<body>
+<button class="back-button" onclick="goBack()">Back</button>
+
+<div class="buttons-container">
+    <button onclick="location.href='/about_team'">About Team</button>
+    <button onclick="location.href='/project_selection'">View Project</button>
+</div>
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+</body>
+</html>
+
